@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Function to load project data from JSON file
 function loadProjects() {
-    alert("inside loadProjects");
+   
   fetch("./data/projects.json")
     .then((response) => {
       if (!response.ok) {
@@ -34,7 +34,6 @@ function loadProjects() {
     })
     .then((projects) => {
       const projectList = document.getElementById("project-list");
-      alert(projectList)
       projectList.innerHTML = ""; // Clear existing content
 
       projects.forEach((project) => {
