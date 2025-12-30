@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio</title>
+  <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>My Personal Portfolio</h1>
+    <nav>
+      <ul class="tabs">
+        <li><button id="about-tab" class="tab-button active">About Me</button></li>
+        <li><button id="projects-tab" class="tab-button">Project Gallery</button></li>
+        <li><button id="contact-tab" class="tab-button">Contact</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- About Me Section -->
+    <section id="about" class="tab-content active">
+      <h2>About Me</h2>
+      <p>Welcome to my portfolio! I am a passionate developer with experience in building responsive web applications.</p>
+    </section>
+
+    <!-- Project Gallery Section -->
+    <section id="projects" class="tab-content">
+      <h2>Project Gallery</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Project Name</th>
+            <th>Start Date</th>
+            <th>End Date</th>
+            <th>Responsibility</th>
+          </tr>
+        </thead>
+        <tbody id="project-list">
+          <!-- Project data will be dynamically loaded here -->
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="tab-content">
+      <h2>Contact</h2>
+      <form id="contact-form">
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" name="phone" required>
+        <br>
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <button type="button" id="submit-button">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="./assets/js/main.js"></script>
+  <script src="./assets/js/validation.js"></script>
+</body>
+</html>
